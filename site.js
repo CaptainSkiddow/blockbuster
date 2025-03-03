@@ -19,9 +19,6 @@ document.addEventListener("keydown", (e) => {
 
 function handleKeyUp() {
   currentIndex = currentIndex - 1;
-
-  menuItems[currentIndex + 1].classList.remove('active');
-
   removeAllOtherActive();
   menuItems[currentIndex].classList.add('active');
   console.log(`The current index is: ${currentIndex}`);
@@ -31,9 +28,6 @@ function handleKeyUp() {
 
 function handleKeyDown() {
   currentIndex = currentIndex + 1;
-
-  menuItems[currentIndex - 1].classList.remove('active');
-
   removeAllOtherActive();
   menuItems[currentIndex].classList.add('active');
   console.log(`The current index is: ${currentIndex}`);
